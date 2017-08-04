@@ -76,3 +76,20 @@ if __name__ == '__main__':
     f = input('Enter f:')
     g = input('Enter g:')
     roots(float(e),float(f),float(g))
+
+'''
+奇数偶数自動判定プログラム
+'''
+
+def judge(h):
+    for i in range(h,h+18,2):
+        print(i)
+
+if __name__ == '__main__':
+    h = int(input('Enter the number you would like to judge:'))
+    if h % 2 == 0:
+        print ("偶数です。")
+        judge(h)
+    else:
+        print ("奇数です。")
+        judge(h)
